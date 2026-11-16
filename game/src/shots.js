@@ -59,6 +59,8 @@ export function applyShotScene(game, shot, seed) {
     game.player.hp = 72;
     game.keepHp = 84;
     game.offer = drawUpgradeOffer(game.rng, 3);
+    game.banner = '';
+    game.bannerTimer = 0;
     game.state = 'upgrade';
     game.frozen = true;
     return;
