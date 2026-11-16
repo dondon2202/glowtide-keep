@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #06121c;
+  color: #eaf6f1;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+#game {
+  width: min(96vw, 1152px);
+  aspect-ratio: 960 / 600;
+  height: auto;
+  display: block;
+  background: #0a1626;
+  border: 2px solid #2b6b7a;
+  border-radius: 12px;
+  box-shadow: 0 0 34px rgba(63, 210, 192, 0.25), 0 18px 44px rgba(0, 0, 0, 0.55);
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.hint {
+  margin: 0;
+  font-size: 14px;
+  color: #9db8c4;
+  text-align: center;
+}
